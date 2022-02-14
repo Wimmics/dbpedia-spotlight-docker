@@ -1,0 +1,8 @@
+<sites>
+	<site>
+		<i18n>fr</i18n>
+		<language>Français</language>
+		<url>http://prod-dbpedia.inria.fr/spotlight-api/rest</url>
+		<text>Berlin est la capitale et la plus grande ville d'Allemagne. Institutionnellement, c’est une ville-État nommée Land de Berlin. Située dans le Nord-Est du pays, Berlin compte environ 3,8 millions d'habitants. Ses habitants s'appellent les Berlinois et les Berlinoises (die Berliner et die Berlinerinnen en allemand). Elle est la première ville et la huitième agglomération la plus peuplée de l'Union européenne. L'agglomération de Berlin s'étend sur 892 km2, et compte 4,4 millions d'habitants. La région métropolitaine de Berlin-Brandebourg qui cumule les Länder de Berlin et de Brandebourg regroupe au total près de 6 millions d'habitants.</text>		
+	</site>
+</sites>
