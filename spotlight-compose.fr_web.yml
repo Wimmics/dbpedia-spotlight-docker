@@ -5,7 +5,7 @@ services:
     container_name: dbpedia-spotlight.fr
     volumes:
        - /appli/spotlight:/opt/spotlight/models
-    restart: unless-stopped   
+    restart: always
     
 
     ports:
