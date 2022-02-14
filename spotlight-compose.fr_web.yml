@@ -4,7 +4,7 @@ services:
     image: dbpedia/dbpedia-spotlight
     container_name: dbpedia-spotlight.fr
     volumes:
-       - /appli/spotlight:/opt/spotlight/models
+       - /appli/dbpedia_proj-data/spotlight:/opt/spotlight/models
     restart: always
     
 
