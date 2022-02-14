@@ -6,8 +6,6 @@ services:
     volumes:
        - /appli/dbpedia_proj-data/spotlight:/opt/spotlight/models
     restart: always
-    
-
     ports:
        - "0.0.0.0:2223:80"  
     networks:
