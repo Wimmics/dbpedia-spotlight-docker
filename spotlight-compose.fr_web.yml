@@ -18,7 +18,7 @@ services:
     ports:
       - "0.0.0.0:2222:80"
     volumes:
-      - "$(pwd)"/sites_just_fr.xml:/var/www/html/config/sites.xml
+      - /appli/dbpedia_proj-data/spotlight/sites_just_fr.xml:/var/www/html/config/sites.xml
     networks:
         - spotlight-net
 
