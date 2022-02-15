@@ -18,7 +18,7 @@ services:
     ports:
       - "0.0.0.0:2222:80"
     volumes:
-      - ./sites_just_fr.xml:/var/www/html/config/sites.xml
+      - ${PWD}/sites_just_fr.xml:/var/www/html/config/sites.xml
     networks:
         - spotlight-net
 
