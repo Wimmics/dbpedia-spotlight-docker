@@ -6,8 +6,6 @@ services:
     volumes:
        - /appli/dbpedia_proj-data/spotlight:/opt/spotlight/models
     restart: always
-    
-
     ports:
        - "0.0.0.0:2223:80"  
     networks:
@@ -20,7 +18,7 @@ services:
     ports:
       - "0.0.0.0:2222:80"
     volumes:
-      - sites_just_fr.xml:/var/www/html/config/sites.xml
+      - ./sites_just_fr.xml:/var/www/html/config/sites.xml
     networks:
         - spotlight-net
 
