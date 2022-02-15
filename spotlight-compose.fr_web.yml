@@ -18,9 +18,7 @@ services:
     ports:
       - "0.0.0.0:2222:80"
     volumes:
-      - type: bind
-           source: "$(pwd)"/sites_just_fr.xml
-           target: /var/www/html/config/sites.xml
+      - "$pwd"/sites_just_fr.xml:/var/www/html/config/sites.xml
     networks:
         - spotlight-net
 
@@ -28,7 +26,3 @@ networks:
     spotlight-net:
         name: spotlight-net
         driver: bridge
-
-
-
-
