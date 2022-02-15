@@ -3,8 +3,9 @@ services:
   spotlight.fr:
     image: dbpedia/dbpedia-spotlight
     container_name: dbpedia-spotlight.fr
+    env_file: .env
     volumes:
-       - /appli/dbpedia_proj-data/spotlight:/opt/spotlight/models
+       - ${FILE_DIR}:/opt/spotlight/models
     restart: always
     ports:
        - "0.0.0.0:2223:80"  
@@ -14,11 +15,12 @@ services:
       
   web:
     image: dbpedia/dbpedia-spotlight-html-view
-    container_name: spotlight-demo
+    container_name: spotlight-demo    
+    env_file: .env
     ports:
       - "0.0.0.0:2222:80"
     volumes:
-      - /appli/dbpedia_proj-data/spotlight/sites_just_fr.xml:/var/www/html/config/sites.xml
+      - ${FILE_DIR}/sites_just_fr.xml:/var/www/html/config/sites.xml
     networks:
         - spotlight-net
 
