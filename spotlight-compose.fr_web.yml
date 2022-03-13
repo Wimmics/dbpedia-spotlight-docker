@@ -21,6 +21,7 @@ services:
       - "0.0.0.0:2222:80"
     volumes:
       - ${FILE_DIR}/sites_just_fr.xml:/var/www/html/config/sites.xml
+    restart: always
     networks:
         - spotlight-net
 
