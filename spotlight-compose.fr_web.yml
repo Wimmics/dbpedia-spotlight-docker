@@ -6,7 +6,7 @@ services:
     env_file: .env
     volumes:
        - ${FILE_DIR}:/opt/spotlight/models
-    restart: always
+    restart: unless-stopped
     ports:
        - "0.0.0.0:2223:80"  
     networks:
@@ -21,7 +21,7 @@ services:
       - "0.0.0.0:2222:80"
     volumes:
       - ${FILE_DIR}/sites_just_fr.xml:/var/www/html/config/sites.xml
-    restart: always
+    restart: unless-stopped
     networks:
         - spotlight-net
 
