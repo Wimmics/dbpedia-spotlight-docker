@@ -19,9 +19,6 @@ RUN mkdir -p /opt/spotlight/models && \
 # adding the script to the container
 ADD spotlight.sh /bin/spotlight.sh
 
-# Override the default SPARQL endpoint
-RUN echo 'endpoint=https://fr.dbpedia.org/sparql' >> /opt/spotlight/models/fr/model.properties
-
 COPY nif-21.vm /opt/spotlight/src/main/resources/templates/nif-21.vm
 RUN chmod +x /bin/spotlight.sh 
 

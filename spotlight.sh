@@ -44,6 +44,10 @@ else
       curl -O  $RESULT
       tar -C /opt/spotlight/models -xvf spotlight-model_lang=$LANG.tar.gz
       rm spotlight-model_lang=$LANG.tar.gz
+      
+      # Override the default SPARQL endpoint
+      echo 'endpoint=https://fr.dbpedia.org/sparql' >> /opt/spotlight/models/fr/model.properties
+
       echo "/opt/spotlight/models/$LANG http://0.0.0.0:80/rest/"
       if [[ $LANG == "en" ]]
       then
