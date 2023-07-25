@@ -18,6 +18,7 @@ RUN mkdir -p /opt/spotlight/models && \
 
 # adding the script to the container
 ADD spotlight.sh /bin/spotlight.sh
+ADD server.properties /bin/server.properties
 COPY nif-21.vm /opt/spotlight/src/main/resources/templates/nif-21.vm
 RUN chmod +x /bin/spotlight.sh 
 

@@ -1,7 +1,10 @@
 version: '3.5'    
 services:
   spotlight.fr:
-    image: dbpedia/dbpedia-spotlight
+    build:
+        context: .
+        dockerfile: dockerfile
+    image: wimmics/dbpedia-spotlight
     container_name: dbpedia-spotlight.fr
     env_file: .env
     volumes:
