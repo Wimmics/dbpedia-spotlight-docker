@@ -47,9 +47,9 @@ else
       echo "/opt/spotlight/models/$LANG http://0.0.0.0:80/rest/"
       if [[ $LANG == "en" ]]
       then
-        java -Dfile.encoding=UTF-8 -Xmx15G -jar /opt/spotlight/dbpedia-spotlight.jar -DaddArgs=/bin/server.properties /opt/spotlight/models/$LANG http://0.0.0.0:80/rest
+        java -Dfile.encoding=UTF-8 -Xmx15G -jar /opt/spotlight/dbpedia-spotlight.jar /opt/spotlight/models/$LANG http://0.0.0.0:80/rest
       else
-        java -Dfile.encoding=UTF-8 -Xmx10G -jar /opt/spotlight/dbpedia-spotlight.jar -DaddArgs=/bin/server.properties /opt/spotlight/models/$LANG http://0.0.0.0:80/rest
+        java -Dfile.encoding=UTF-8 -Xmx10G -jar /opt/spotlight/dbpedia-spotlight.jar /opt/spotlight/models/$LANG http://0.0.0.0:80/rest
       fi
 
 fi
